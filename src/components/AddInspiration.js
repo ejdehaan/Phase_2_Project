@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react'
 
 function AddInspiration() {
@@ -15,7 +14,7 @@ function AddInspiration() {
     }
 
     return (
-    <form>
+    <form className='form'>
         <h3>Add Inspiration!</h3>
         <label>Name</label>
         <input></input>
@@ -30,13 +29,12 @@ function AddInspiration() {
             <br></br>
             <br></br>
         <select>
-            <option value="1">Venue</option>
-            <option value="2">Dress</option>
+            <option value="1">Decorations</option>
+            {/* <option value="2">Dress</option>
             <option value="3">Hair</option>
             <option value="4">Accessories</option>
             <option value="5">Flowers</option>
-            <option value="6">Decorations</option>
-
+            <option value="6">Venue</option> */}
         </select>
             <br></br>
             <br></br>

@@ -5,16 +5,58 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(0deg, rgba(129,6,106,1) 29%, rgba(207,164,184,1) 68%);
+  background-attachment: fixed;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } 
 
+.header {
+  padding: 5px;
+  border: 2px solid palevioletred;
+  text-align: center;
+}
+
+.navbar {
+  padding: 5px;
+  border: 2px solid palevioletred;
+  width: 500px;
+  margin:auto;
+
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
 
 
-.Header {
-  text-align: right;
-  color: blueviolet;
+.box {
+  flex-grow: 1;
+  border: 3px solid rgba(0,0,0,.2);
+}
+
+.box1 {
+  flex-grow: 2;
+  border: 3px solid rgba(0,0,0,.2);
+}
+
+/* .box2 {
+  flex-grow: 2;
+  border: 3px solid rgba(0,0,0,.2);
+} */
+
+.form {
+  padding: 20px;
+  border: 2px solid palevioletred;
+  width: 300px;
+  margin:auto;
+}
+
+.category {
+  padding: 20px;
+  border: 2px solid palevioletred;
 }

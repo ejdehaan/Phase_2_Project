@@ -23,3 +23,20 @@ If you have the time, continue to build out your project in one or more (or all!
 
 4.Deploy your app! (See the "Deploying" section below for instructions.)
 
+
+# Component Hierarchy
+└── App
+    ├── Header
+    ├── Home(CoupleInfo)
+    ├── NavBar
+    ├── AddInspiration
+    └──Categories
+        |   InspirationList
+        └── InspirationShow
+
+1. In the top level component App, create parent routes and render Home, Header, NavBar, AddInspiration, and Categories
+2. In Categories, render <InspirationList />
+3. In Inspiration List, iterate through the inspiration/post object and create a dynamic <Link> for each post    using its id
+4. In Categories, import useRouteMatch and create a child route by combining the current url with the post_id parameter; inside the child route, render <InspirtationShow />, passing the post object as props
+5. In <InspirtationShow />, import useParams; use the post_id from the params object to access the correct post from the post object and display it on the page
+

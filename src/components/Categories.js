@@ -1,18 +1,14 @@
-import { useState } from 'react'
-import AddInspiration from "./AddInspiration"
+
 
 function Categories() {
   
-  const [inspo, setInspo] = useState({})
+  // const {title, image, link, category} = inspo
+ 
+  console.log()
 
-  function handleAddInspo(newInspo) {
-      setInspo({...inspo, newInspo})
-  }
-  
   return (
     <div className="category">
-        <h4>Blah</h4>
-        <AddInspiration handleAddInspo={handleAddInspo}/>
+        <h4></h4>
     </div>
   )
 }

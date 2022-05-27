@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Categories from './Categories';
 
 
 function AddInspiration(  ) {
 
-    const [inspo, setInspo] = useState({})
+    const [inspo, setInspo] = useState([])
+
 
     const [formData, setFormData] = useState({
         title: "",
@@ -12,12 +13,6 @@ function AddInspiration(  ) {
         link: "",
         category: ""
     })
-
-    
-    function handleAddInspo(newInspo) {
-        setInspo({...inspo, newInspo})
-    }
-
 
     function handleChange(e) {
         const { name, value } = e.target;
@@ -27,7 +22,7 @@ function AddInspiration(  ) {
 
     function handleSubmit(e) {
         e.preventDefault()
-        fetch("http://localhost:4000/inspiration",{
+        fetch("http://localhost:4000/inspo",{
             method:"POST",
             headers:{
                 "Content-Type": "application/json"
@@ -45,65 +40,83 @@ function AddInspiration(  ) {
     }
 
 
+    function fetchInspo() {
+        fetch("http://localhost:4000/inspo")
+        .then(resp => resp.json())
+        .then(data => setInspo(data))
+    }
+
+    useEffect(() => {
+        fetchInspo();
+    }, []);
+
+
+    function handleAddInspo(newInspo) {
+        setInspo({...inspo, newInspo})
+    }
+
+ 
     return (
         <div>
-            <form className='form' autoComplete="off" onSubmit={handleSubmit}>
-                <h3>Add Inspiration!</h3>
-                <label>Title</label>
-                <input 
-                    name="title"
-                    onChange={handleChange}
-                    value={formData.title}
-                    />
-                    
+            <div>
+                <form className='form' autoComplete="off" onSubmit={handleSubmit}>
+                    <h3>Add Inspiration!</h3>
+                    <label>Title</label>
+                    <input 
+                        name="title"
+                        onChange={handleChange}
+                        value={formData.title}
+                        />
+                        
 
-                    <br></br>
-                    <br></br>
+                        <br></br>
+                        <br></br>
 
-                <label>Image</label>
-                <input 
-                    name="image"
+                    <label>Image</label>
+                    <input 
+                        name="image"
+                        onChange={handleChange}
+                        value={formData.image}
+                        >
+                        </input>
+
+                        <br></br>
+                        <br></br>
+
+                    <label>Link</label>
+                    <input 
+                    name="link"
                     onChange={handleChange}
-                    value={formData.image}
+                    value={formData.link}
                     >
                     </input>
 
-                    <br></br>
-                    <br></br>
+                        <br></br>
+                        <br></br>
+                    {/*<select onChange={handleChange}>
+                        <option value="1">Decorations</option>
+                        <option value="2">Dress</option>
+                        <option value="3">Hair</option>
+                        <option value="4">Accessories</option>
+                        <option value="5">Flowers</option>
+                        <option value="6">Venue</option> 
+                    </select>*/}
 
-                <label>Link</label>
-                <input 
-                name="link"
-                onChange={handleChange}
-                value={formData.link}
-                >
-                </input>
+                    <label>Category</label>
+                    <input 
+                        name="category"
+                        onChange={handleChange}
+                        value={formData.category}
+                        >
+                        </input>
 
-                    <br></br>
-                    <br></br>
-                {/*<select onChange={handleChange}>
-                    <option value="1">Decorations</option>
-                    <option value="2">Dress</option>
-                    <option value="3">Hair</option>
-                    <option value="4">Accessories</option>
-                    <option value="5">Flowers</option>
-                    <option value="6">Venue</option> 
-                </select>*/}
-
-                <label>Category</label>
-                <input 
-                    name="category"
-                    onChange={handleChange}
-                    value={formData.category}
-                    >
-                    </input>
-
-                    <br></br>
-                    <br></br>
-                <button type="submit">Add Idea!</button>
-            </form>
-            <br/>
-            {/* <Categories inspo={inspo} /> */}
+                        <br></br>
+                        <br></br>
+                    <button type="submit">Add Idea!</button>
+                </form>
+                <br/>
+            </div>
+            <Categories inspo={inspo}/>
         </div>
     )
 }

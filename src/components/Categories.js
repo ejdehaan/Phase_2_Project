@@ -1,14 +1,21 @@
+import {useState} from 'react'
+import CategoryItem from './CategoryItem'
+
+function Categories({inspo}) {
 
 
-function Categories() {
   
-  // const {title, image, link, category} = inspo
- 
-  console.log()
+  function renderInspo() {
+    return inspo.map((inspo) => 
+    <CategoryItem key={inspo.title} {...inspo} />)
+  }
 
   return (
-    <div className="category">
-        <h4></h4>
+    <div>
+        <h3 className='category'>Categories</h3>
+        <ul>
+          {inspo && <div>{renderInspo()}</div>}
+        </ul>
     </div>
   )
 }

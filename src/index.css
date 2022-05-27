@@ -15,11 +15,15 @@ code {
     monospace;
 } 
 
+
 .header {
   padding: 5px;
   border: 2px solid palevioletred;
   text-align: center;
+  width: 600px;
+  margin:auto;
 }
+
 
 .navbar {
   padding: 5px;
@@ -39,15 +43,18 @@ code {
   border: 3px solid rgba(0,0,0,.2);
 }
 
+
 .box1 {
   flex-grow: 2;
   border: 3px solid rgba(0,0,0,.2);
 }
 
+
 /* .box2 {
   flex-grow: 2;
   border: 3px solid rgba(0,0,0,.2);
 } */
+
 
 .form {
   padding: 20px;
@@ -56,9 +63,24 @@ code {
   margin:auto;
 }
 
+
 .category {
+  padding: 5px;
+  border: 2px solid palevioletred;
+  width: 500px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.category-item {
   padding: 20px;
   border: 2px solid palevioletred;
+  width: 700px;
+  margin: 10px auto;
+  text-align: center;
 }
 
 
+.image {
+  width: 100%
+}

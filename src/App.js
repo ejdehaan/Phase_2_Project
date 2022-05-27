@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Categories from "./components/Categories"
 import { Switch, Route } from 'react-router-dom'
+import CategoryItem from "./components/CategoryItem";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/categories">
           <Categories />
         </Route>
+
       </Switch>
       
     </div>

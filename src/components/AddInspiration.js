@@ -54,7 +54,7 @@ function AddInspiration(  ) {
 
 
     function handleAddInspo(newInspo) {
-        setInspo({...inspo, newInspo})
+        setInspo([...inspo, newInspo])
     }
 
  

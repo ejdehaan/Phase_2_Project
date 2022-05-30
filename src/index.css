@@ -28,7 +28,7 @@ code {
 .navbar {
   padding: 5px;
   border: 2px solid palevioletred;
-  width: 500px;
+  width: 300px;
   margin:auto;
 
   display: flex;
@@ -49,23 +49,38 @@ code {
   border: 3px solid rgba(0,0,0,.2);
 }
 
-
-/* .box2 {
+.box2 {
   flex-grow: 2;
   border: 3px solid rgba(0,0,0,.2);
-} */
+}
+
+.box3 {
+  flex-grow: 2;
+  border: 3px solid rgba(0,0,0,.2);
+}
+
+.box4 {
+  flex-grow: 2;
+  border: 3px solid rgba(0,0,0,.2);
+}
+
+
 
 
 .form {
   padding: 20px;
   border: 2px solid palevioletred;
-  width: 300px;
-  margin:auto;
+  width: 240px;
+  margin: 10px auto;
+  text-align: right;
 }
 
+.form-header{
+  text-align: center;
+}
 
 .category {
-  padding: 5px;
+  padding: 10px;
   border: 2px solid palevioletred;
   width: 500px;
   margin: 10px auto;
@@ -83,4 +98,11 @@ code {
 
 .image {
   width: 100%
+}
+
+.home {
+    padding: 20px;
+    width: 700px;
+    margin: 10px auto;
+    text-align: center;
 }

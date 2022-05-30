@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+
 import Categories from './Categories';
 
 
@@ -13,6 +14,7 @@ function AddInspiration(  ) {
         link: "",
         category: ""
     })
+
 
     function handleChange(e) {
         const { name, value } = e.target;
@@ -60,8 +62,8 @@ function AddInspiration(  ) {
         <div>
             <div>
                 <form className='form' autoComplete="off" onSubmit={handleSubmit}>
-                    <h3>Add Inspiration!</h3>
-                    <label>Title</label>
+                    <h3 className='form-header'>Add Inspiration!</h3>
+                    <label>Title  </label>
                     <input 
                         name="title"
                         onChange={handleChange}
@@ -72,7 +74,7 @@ function AddInspiration(  ) {
                         <br></br>
                         <br></br>
 
-                    <label>Image</label>
+                    <label>Image  </label>
                     <input 
                         name="image"
                         onChange={handleChange}
@@ -83,7 +85,7 @@ function AddInspiration(  ) {
                         <br></br>
                         <br></br>
 
-                    <label>Link</label>
+                    <label>Link  </label>
                     <input 
                     name="link"
                     onChange={handleChange}
@@ -102,7 +104,7 @@ function AddInspiration(  ) {
                         <option value="6">Venue</option> 
                     </select>*/}
 
-                    <label>Category</label>
+                    <label>Category  </label>
                     <input 
                         name="category"
                         onChange={handleChange}

@@ -13,6 +13,27 @@
       "link": "https://partyspace.com/southflorida/venue/Cauley-Square-Historic-Village",
       "category": "Venue",
       "id": 2
+    },
+    {
+      "title": "Potion Bottles",
+      "image": "https://m.media-amazon.com/images/I/810l2QTvNPS._AC_SX679_.jpg",
+      "link": "https://www.amazon.com/Pieces-Stopper-Wishing-Bottles-Container/dp/B0925YDSD2/ref=sr_1_4?keywords=potion+bottles+for+witches&qid=1653945216&sr=8-4",
+      "category": "Party Favors",
+      "id": 3
+    },
+    {
+      "title": "Hanging Lights & Vines",
+      "image": "https://emmalovesweddings.com/wp-content/uploads/2020/02/string-lights-and-greenery-wedding-backdrop-ideas.jpg",
+      "link": "https://emmalovesweddings.com/wedding-lighting-decoration-ideas/",
+      "category": "Decorations",
+      "id": 4
+    },
+    {
+      "title": "Floating Lotus Candles",
+      "image": "https://m.media-amazon.com/images/I/61IAx6o3yhL._AC_SX679_.jpg",
+      "link": "https://www.amazon.com/Toner-Depot-Floating-Lanterns-Outdoor/dp/B083N9QWYX/ref=asc_df_B083N9QWYX/?tag=&linkCode=df0&hvadid=416672409243&hvpos=&hvnetw=g&hvrand=11598109552457372648&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9012145&hvtargid=pla-884623530624&ref=&adgrpid=94717461300&th=1",
+      "category": "Decoraions",
+      "id": 5
     }
   ]
 }

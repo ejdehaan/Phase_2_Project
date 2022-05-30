@@ -14,15 +14,17 @@ function Categories({inspo}) {
     <div>
         <div className='category'>
           <h4>Categories</h4>
-          <button>All</button>
+          <button className='button'>All</button>
           <div/>
-          <button>Venue</button>
+          <button className='button'>Venue</button>
           <div/>
-          <button>Dresses</button>
+          <button className='button'>Dresses</button>
           <div/>
-          <button>Hair/Makeup</button>
+          <button className='button'>Decorations</button>
           <div/>
-          <button>Decorations</button>
+          <button className='button'>Hair/Makeup</button>
+          <div/>
+          <button className='button'>Party Favors</button>
         </div>
         <br/>
         <ul>

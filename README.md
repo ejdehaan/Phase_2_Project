@@ -1,3 +1,21 @@
+# Info about this Application
+--This is a simple wedding inspiration post page. The couple information on the homepage is static. The Add Inspiration page allows you to create "posts" for different categories.
+
+--The sort by category function is not yet live.
+
+--use npm install to install this project's dependencies.
+
+# Component Hierarchy
+└── App
+    ├── Header
+    ├── Home
+    ├── NavBar
+    ├── AddInspiration
+    └──Categories
+        └── Category Item
+
+
+
 # Phase_2_Project
 
 # Minimum Project Requirements
@@ -31,26 +49,3 @@ If you have the time, continue to build out your project in one or more (or all!
 3.Add some styling: you're encouraged to write your CSS from scratch, either by using styled components (Links to an external site.) or writing CSS files and using id/className to style your elements. You can also incorporate a UI framework (like React Bootstrap (Links to an external site.), Semantic UI (Links to an external site.), or Material UI (Links to an external site.)) if you prefer.
 
 4.Deploy your app! (See the "Deploying" section below for instructions.)
-
-
-
-
-
-# Component Hierarchy
-└── App
-    ├── Header
-    ├── Home(display static CoupleInfo?
-    ├── NavBar
-    ├── AddInspiration
-    └──Categories
-        |   InspirationList
-        └── InspirationShow
-
-1. In the top level component App, create parent routes and render Home, Header, NavBar, AddInspiration, and Categories
-2. In Categories, render <InspirationList />
-3. In Inspiration List, iterate through the inspiration/post object and create a dynamic <Link> for each post    using its id
-4. In Categories, import useRouteMatch and create a child route by combining the current url with the post_id parameter; inside the child route, render <InspirtationShow />, passing the post object as props
-5. In <InspirtationShow />, import useParams; use the post_id from the params object to access the correct post from the post object and display it on the page
-
-
-<!-- In setting up our nested routes, we made use of two hooks provided by React Router: useRouteMatch and useParams. The first is used to retrieve the URL of the current page, and the second allows us to access the value of any parameters we're using in our routes. The two together, along with the movies object, gave us all the tools we needed to create dynamic routes for individual movies and to display a movie's information when its link is clicked. -->

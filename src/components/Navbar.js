@@ -6,6 +6,10 @@ function Navbar() {
         <Link to="/">
           <button className="box2">Home!</button>
         </Link>
+
+        <Link to ="/about">
+          <button className="box3">About!</button>
+        </Link>
         
         <Link to="/add-inspiration">
           <button className="box">Add Inspiration!</button>

@@ -54,6 +54,12 @@ code {
   border-radius: 100px;
 }
 
+.box3 {
+  flex-grow: 2;
+  border: 3px solid rgba(0,0,0,.2);
+  border-radius: 100px;
+}
+
 .button {
   border-radius: 100px;
 }
@@ -106,5 +112,14 @@ code {
 }
 
 .names {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about {
+  padding: 10px;
+  border: 2px solid palevioletred;
+  width: 560px;
+  margin: 10px auto;
+  text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

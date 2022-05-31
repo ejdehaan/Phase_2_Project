@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Categories from "./components/Categories"
 import { Switch, Route } from 'react-router-dom'
 import CategoryItem from "./components/CategoryItem";
+import About from "./components/About";
 
 function App() {
   return (
@@ -19,9 +20,9 @@ function App() {
           <AddInspiration />
         </Route>
 
-        {/* <Route path="/categories">
-          <Categories />
-        </Route> */}
+        <Route path="/about">
+          <About />
+        </Route>
 
         <Route path="/">
           <Home />

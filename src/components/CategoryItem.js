@@ -1,4 +1,3 @@
-
 function CategoryItem({title, image, link, category}) {
   
     

@@ -1,4 +1,3 @@
-import {useState} from 'react'
 import CategoryItem from './CategoryItem'
 
 function Categories({inspo}) {
